@@ -8,6 +8,13 @@
 * 保存预测参数并图线绘制
 ### 依赖环境
 ros2 opencv c++
-###
+###问题
 当前问题:预测存在延迟 
         rqt显示图像卡顿 用cv显示没问题
+###使用
+在终端中输入
+colcon build
+source install/setup.bash 
+ros2 run image_publish camera 
+ros2 run armor_dectetor armor_node 
+ros2 run kalman_predict predict 
